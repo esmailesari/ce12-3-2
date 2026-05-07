@@ -13,7 +13,7 @@ terraform {
 
 # 3. S3 Bucket Resource
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "ee-s3-bucket-3-1" # Ensure this is globally unique
+  bucket = "ee-s3-bucket-3-2" # Ensure this is globally unique
 
   tags = {
     Name = "EE S3 Bucket"
