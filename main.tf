@@ -5,9 +5,9 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "sctp-ce12-tfstate-bucket"
-    key            = "ee-s3buckets.tfstate"
-    region         = "ap-southeast-1"
+    bucket = "sctp-ce12-tfstate-bucket"
+    key    = "ee-s3buckets.tfstate"
+    region = "ap-southeast-1"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "my_bucket" {
   bucket = "ee-s3-bucket-3-1" # Ensure this is globally unique
 
   tags = {
-    Name        = "EE S3 Bucket"
+    Name = "EE S3 Bucket"
   }
 }
 
